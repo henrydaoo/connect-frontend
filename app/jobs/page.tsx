@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   Search,
   MapPin,
@@ -9,15 +10,10 @@ import {
   Clock,
   DollarSign,
 } from "lucide-react";
-import { useState } from "react";
+
 
 const Jobs = () => {
-  const [selectedFilters, setSelectedFilters] = useState({
-    techStack: [],
-    jobType: [],
-    experience: [],
-    remote: false,
-  });
+
 
   const jobs = [
     {
@@ -270,9 +266,11 @@ const Jobs = () => {
                   >
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-start gap-4">
-                        <img
+                        <Image
                           src={job.logo}
                           alt={job.company}
+                          width={48}
+                          height={48}
                           className="w-12 h-12 rounded-lg object-cover"
                         />
                         <div>

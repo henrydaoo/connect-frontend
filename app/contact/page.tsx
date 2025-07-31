@@ -1,6 +1,4 @@
 "use client";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
@@ -74,8 +72,8 @@ const Contact = () => {
               Get in <span className="text-brand">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Have questions? We'd love to hear from you. Send us a message and
-              we'll respond as soon as possible.
+              Have questions? We&apos;d love to hear from you. Send us a message and
+              we&apos;ll respond as soon as possible.
             </p>
           </motion.div>
         </div>
@@ -200,7 +198,7 @@ const Contact = () => {
                 </h3>
 
                 <div className="space-y-6">
-                  {contactInfo.map((info, index) => {
+                  {contactInfo.map((info) => {
                     const IconComponent = info.icon;
                     return (
                       <div key={info.title} className="flex items-start gap-4">
@@ -303,7 +301,7 @@ const Contact = () => {
               </h3>
               <p className="text-muted-foreground">
                 Simply apply to join our network, complete our technical
-                assessment, and create your profile. We'll then match you with
+                assessment, and create your profile. We&apos;ll then match you with
                 relevant opportunities.
               </p>
             </motion.div>
@@ -353,8 +351,8 @@ const Contact = () => {
                 Do you offer any guarantees?
               </h3>
               <p className="text-muted-foreground">
-                Yes! We offer a 30-day satisfaction guarantee. If you're not
-                happy with your hire, we'll provide a free replacement.
+                Yes! We offer a 30-day satisfaction guarantee. If you&apos;re not
+                happy with your hire, we&apos;ll provide a free replacement.
               </p>
             </motion.div>
           </div>

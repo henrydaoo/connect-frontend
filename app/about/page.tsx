@@ -1,6 +1,4 @@
 "use client";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Users, Target, Award, Globe } from "lucide-react";
 import Image from "next/image";
@@ -234,7 +232,7 @@ const About = () => {
               Meet Our Leadership Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The people behind Connect's mission to transform tech hiring
+              The people behind Connect&apos;s mission to transform tech hiring
             </p>
           </motion.div>
 
@@ -248,16 +246,19 @@ const About = () => {
                 viewport={{ once: true }}
                 className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-card transition-all duration-300"
               >
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  width={96}
+                  height={96}
+                  unoptimized
                 />
                 <h3 className="text-xl font-semibold text-foreground mb-1">
                   {member.name}
                 </h3>
                 <p className="text-brand font-medium mb-3">{member.role}</p>
-                <p className="text-sm text-muted-foreground">{member.bio}</p>
+                <p className="text-sm text-muted-foreground">{member.bio.replace(/'/g, "&apos;")}</p>
               </motion.div>
             ))}
           </div>
@@ -275,7 +276,7 @@ const About = () => {
           >
             <h2 className="text-4xl font-bold">Join Our Growing Community</h2>
             <p className="text-xl text-blue-100">
-              Whether you're a developer looking for your next opportunity or a
+              Whether you&apos;re a developer looking for your next opportunity or a
               company building your dream team, Connect is here to help you
               succeed.
             </p>
