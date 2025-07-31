@@ -1,6 +1,15 @@
 "use client";
 import { motion } from "framer-motion";
-import { Github, Slack, Figma, Chrome, FileText, Video, MessageSquare, Calendar } from "lucide-react";
+import {
+  Github,
+  Slack,
+  Figma,
+  Chrome,
+  FileText,
+  Video,
+  MessageSquare,
+  Calendar,
+} from "lucide-react";
 
 const NetworkVisualization = () => {
   const appIcons = [
@@ -29,11 +38,12 @@ const NetworkVisualization = () => {
             Communicate <span className="text-brand">Clearly</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Integrate seamlessly with all your favorite apps to build a unified, customized workspace that perfectly aligns with your team&apos;s needs.
+            Integrate seamlessly with all your favorite apps to build a unified,
+            customized workspace that perfectly aligns with your team&apos;s
+            needs.
           </p>
         </motion.div>
 
-        {/* Network visualization */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -43,28 +53,67 @@ const NetworkVisualization = () => {
         >
           <div className="relative bg-gray-50 rounded-3xl p-12 min-h-[500px]">
             {/* Connection lines */}
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 600 400">
+            <svg
+              className="absolute inset-0 w-full h-full"
+              viewBox="0 0 600 400"
+            >
               <defs>
-                <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <linearGradient
+                  id="connectionGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
                   <stop offset="0%" stopColor="#e5e7eb" />
                   <stop offset="50%" stopColor="#2563eb" />
                   <stop offset="100%" stopColor="#e5e7eb" />
                 </linearGradient>
               </defs>
-              {/* Radial connection lines from center */}
               <g opacity="0.4">
-                <path d="M300 200 L150 80" stroke="url(#connectionGradient)" strokeWidth="2" />
-                <path d="M300 200 L450 100" stroke="url(#connectionGradient)" strokeWidth="2" />
-                <path d="M300 200 L120 150" stroke="url(#connectionGradient)" strokeWidth="2" />
-                <path d="M300 200 L480 160" stroke="url(#connectionGradient)" strokeWidth="2" />
-                <path d="M300 200 L140 250" stroke="url(#connectionGradient)" strokeWidth="2" />
-                <path d="M300 200 L460 240" stroke="url(#connectionGradient)" strokeWidth="2" />
-                <path d="M300 200 L170 320" stroke="url(#connectionGradient)" strokeWidth="2" />
-                <path d="M300 200 L430 300" stroke="url(#connectionGradient)" strokeWidth="2" />
+                <path
+                  d="M300 200 L150 80"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M300 200 L450 100"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M300 200 L120 150"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M300 200 L480 160"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M300 200 L140 250"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M300 200 L460 240"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M300 200 L170 320"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
+                <path
+                  d="M300 200 L430 300"
+                  stroke="url(#connectionGradient)"
+                  strokeWidth="2"
+                />
               </g>
             </svg>
 
-            {/* App icons positioned around the circle */}
             {appIcons.map((app, index) => {
               const IconComponent = app.icon;
               return (
@@ -81,7 +130,6 @@ const NetworkVisualization = () => {
               );
             })}
 
-            {/* Center hub */}
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -94,7 +142,6 @@ const NetworkVisualization = () => {
               </div>
             </motion.div>
 
-            {/* Toggle switches */}
             <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
               <div className="space-y-4">
                 <div className="w-12 h-6 bg-brand rounded-full flex items-center px-1">

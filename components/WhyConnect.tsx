@@ -9,32 +9,38 @@ const WhyConnect = () => {
     {
       icon: CheckCircle,
       title: "Vetted Talent",
-      description: "All developers go through rigorous technical screening and background checks.",
+      description:
+        "All developers go through rigorous technical screening and background checks.",
     },
     {
       icon: Zap,
       title: "Fast Matching",
-      description: "Our AI-powered matching connects you with the right opportunities in hours, not weeks.",
+      description:
+        "Our AI-powered matching connects you with the right opportunities in hours, not weeks.",
     },
     {
       icon: Target,
       title: "Perfect Fit",
-      description: "Advanced algorithms ensure skill and culture alignment for long-term success.",
+      description:
+        "Advanced algorithms ensure skill and culture alignment for long-term success.",
     },
     {
       icon: Globe2,
       title: "Global Reach",
-      description: "Access talent from around the world or find local opportunities in your area.",
+      description:
+        "Access talent from around the world or find local opportunities in your area.",
     },
     {
       icon: Users,
       title: "Dedicated Support",
-      description: "Personal account managers guide you through the entire hiring process.",
+      description:
+        "Personal account managers guide you through the entire hiring process.",
     },
     {
       icon: Award,
       title: "Quality Guarantee",
-      description: "30-day satisfaction guarantee with full replacement if you're not happy.",
+      description:
+        "30-day satisfaction guarantee with full replacement if you're not happy.",
     },
   ];
 
@@ -52,12 +58,12 @@ const WhyConnect = () => {
             Why Choose Connect?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We&apos;re more than just a job board. We&apos;re your partner in building exceptional tech teams.
+            We&apos;re more than just a job board. We&apos;re your partner in
+            building exceptional tech teams.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 mb-20">
-          {/* For Companies */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -70,10 +76,11 @@ const WhyConnect = () => {
                 For Companies
               </h3>
               <p className="text-muted-foreground mb-6">
-                Hire pre-vetted developers who are ready to contribute from day one
+                Hire pre-vetted developers who are ready to contribute from day
+                one
               </p>
             </div>
-            
+
             <div className="relative">
               <Image
                 src={teamImage}
@@ -107,7 +114,6 @@ const WhyConnect = () => {
             </div>
           </motion.div>
 
-          {/* For Developers */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -123,7 +129,7 @@ const WhyConnect = () => {
                 Access exclusive opportunities with top-tier companies worldwide
               </p>
             </div>
-            
+
             <div className="relative">
               <Image
                 src={developerImage}

@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { UserPlus, CheckCircle, Handshake } from "lucide-react";
 

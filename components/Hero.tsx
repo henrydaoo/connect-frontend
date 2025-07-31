@@ -22,7 +22,8 @@ const Hero = () => {
               with Leading Tech Companies
             </h1>
             <p className="text-xl text-muted-foreground max-w-xl">
-              Join thousands of vetted software engineers and innovative companies building the future of technology together.
+              Join thousands of vetted software engineers and innovative
+              companies building the future of technology together.
             </p>
           </div>
 
@@ -30,7 +31,11 @@ const Hero = () => {
             <Button variant="brand" size="lg" className="text-lg px-8 py-6">
               I&apos;m a Developer
             </Button>
-            <Button variant="brand-outline" size="lg" className="text-lg px-8 py-6">
+            <Button
+              variant="brand-outline"
+              size="lg"
+              className="text-lg px-8 py-6"
+            >
               I&apos;m Hiring
             </Button>
           </div>
@@ -67,8 +72,7 @@ const Hero = () => {
               priority
             />
           </div>
-          
-          {/* Floating cards */}
+
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -81,7 +85,9 @@ const Hero = () => {
               </div>
               <div>
                 <div className="font-semibold text-sm">JavaScript</div>
-                <div className="text-xs text-muted-foreground">15,000+ jobs</div>
+                <div className="text-xs text-muted-foreground">
+                  15,000+ jobs
+                </div>
               </div>
             </div>
           </motion.div>
@@ -98,7 +104,9 @@ const Hero = () => {
               </div>
               <div>
                 <div className="font-semibold text-sm">Python</div>
-                <div className="text-xs text-muted-foreground">12,000+ jobs</div>
+                <div className="text-xs text-muted-foreground">
+                  12,000+ jobs
+                </div>
               </div>
             </div>
           </motion.div>

@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
       role: "Senior Developer",
       company: "TechCorp",
       avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b612d5c4?w=150&h=150&fit=crop&crop=face",
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       text: "Connect helped me find the perfect remote position. The platform is intuitive and the job matches are incredibly accurate.",
     },

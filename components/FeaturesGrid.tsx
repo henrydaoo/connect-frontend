@@ -7,7 +7,6 @@ const FeaturesGrid = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left side - Network visualization */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -15,9 +14,7 @@ const FeaturesGrid = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            {/* Network diagram */}
             <div className="relative w-full h-80">
-              {/* Connection lines */}
               <svg
                 className="absolute inset-0 w-full h-full"
                 viewBox="0 0 400 320"
@@ -70,7 +67,6 @@ const FeaturesGrid = () => {
                 />
               </svg>
 
-              {/* Developer avatars */}
               <div className="absolute top-8 left-12 w-16 h-16 bg-white rounded-full shadow-lg border-4 border-brand/20 flex items-center justify-center">
                 <Users className="w-8 h-8 text-brand" />
               </div>
@@ -87,14 +83,12 @@ const FeaturesGrid = () => {
                 <Users className="w-8 h-8 text-brand" />
               </div>
 
-              {/* Center main avatar */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-brand rounded-full shadow-xl flex items-center justify-center">
                 <Users className="w-10 h-10 text-white" />
               </div>
             </div>
           </motion.div>
 
-          {/* Right side - Content */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -31,7 +31,11 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Twitter, href: "https://twitter.com/connect", label: "Twitter" },
-    { icon: Linkedin, href: "https://linkedin.com/company/connect", label: "LinkedIn" },
+    {
+      icon: Linkedin,
+      href: "https://linkedin.com/company/connect",
+      label: "LinkedIn",
+    },
     { icon: Github, href: "https://github.com/connect", label: "GitHub" },
     { icon: Mail, href: "mailto:hello@connect.com", label: "Email" },
   ];
@@ -40,7 +44,6 @@ const Footer = () => {
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-5 gap-8 mb-12">
-          {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="text-2xl font-bold text-brand mb-4 block">
               Connect
@@ -65,7 +68,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
               <h3 className="font-semibold text-foreground mb-4">{category}</h3>
@@ -85,14 +87,10 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-center items-center">
           <p className="text-muted-foreground text-sm">
             © 2024 Connect. All rights reserved.
           </p>
-          <div className="flex items-center space-x-6 text-sm text-muted-foreground mt-4 md:mt-0">
-            <span>Made with ❤️ for the developer community</span>
-          </div>
         </div>
       </div>
     </footer>
