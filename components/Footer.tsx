@@ -7,18 +7,13 @@ const Footer = () => {
       { label: "For Developers", href: "/for-developers" },
       { label: "For Companies", href: "/for-companies" },
       { label: "Browse Jobs", href: "/jobs" },
-      { label: "Post a Job", href: "/post-job" },
     ],
     Company: [
       { label: "About Us", href: "/about" },
-      { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
-      { label: "Careers", href: "/careers" },
     ],
     Resources: [
       { label: "Help Center", href: "/help" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "API Documentation", href: "/docs" },
       { label: "Status", href: "/status" },
     ],
     Legal: [
@@ -55,14 +50,14 @@ const Footer = () => {
               {socialLinks.map((social) => {
                 const IconComponent = social.icon;
                 return (
-                  <a
+                  <Link
                     key={social.label}
                     href={social.href}
                     className="text-muted-foreground hover:text-brand transition-colors"
                     aria-label={social.label}
                   >
                     <IconComponent size={20} />
-                  </a>
+                  </Link>
                 );
               })}
             </div>
@@ -74,12 +69,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
