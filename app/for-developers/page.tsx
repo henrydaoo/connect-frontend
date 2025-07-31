@@ -133,7 +133,7 @@ const ForDevelopers = () => {
               Why Top Developers Choose Connect
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of successful developers who've advanced their
+              Join thousands of successful developers who&apos;ve advanced their
               careers with us
             </p>
           </motion.div>
@@ -219,7 +219,7 @@ const ForDevelopers = () => {
               Ready to Level Up Your Career?
             </h2>
             <p className="text-xl text-blue-100">
-              Join thousands of developers who've transformed their careers with
+              Join thousands of developers who&apos;ve transformed their careers with
               Connect
             </p>
             <Button
