@@ -13,14 +13,13 @@ const Navigation = () => {
     { label: "For Companies", href: "/for-companies" },
     { label: "Browse Jobs", href: "/jobs" },
     { label: "About", href: "/about" },
-    { label: "Pricing", href: "/pricing" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center">
             <div className="w-8 h-8 bg-brand rounded-lg mr-3"></div>
             <Link href="/" className="text-xl font-bold text-gray-900">
@@ -28,26 +27,30 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className="text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
 
-          {/* Desktop Auth Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="ghost" className="text-gray-600">Sign In</Button>
-            <Button variant="brand" className="bg-brand text-white hover:bg-brand-dark">Get Started</Button>
+            <Button variant="ghost" className="text-gray-600">
+              Sign In
+            </Button>
+            <Button
+              variant="brand"
+              className="bg-brand text-white hover:bg-brand-dark"
+            >
+              Get Started
+            </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <Button
               variant="ghost"
@@ -59,7 +62,6 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         <AnimatePresence>
           {isOpen && (
             <motion.div

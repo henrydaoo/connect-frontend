@@ -5,7 +5,6 @@ import globalNetworkImage from "@/assets/global-network.jpg";
 const FinalCTA = () => {
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Background Image */}
       <div
         className="absolute inset-0 z-0"
         style={{
