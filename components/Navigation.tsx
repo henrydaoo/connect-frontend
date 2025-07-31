@@ -13,7 +13,7 @@ const Navigation = () => {
     { label: "For Companies", href: "/for-companies" },
     { label: "Browse Jobs", href: "/jobs" },
     { label: "About", href: "/about" },
-    { label: "Pricing", href: "/pricing" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
