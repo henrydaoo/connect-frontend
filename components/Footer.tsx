@@ -89,7 +89,7 @@ const Footer = () => {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-center items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Connect. All rights reserved.
+            © {(new Date()).getFullYear()} Connect. All rights reserved.
           </p>
         </div>
       </div>
