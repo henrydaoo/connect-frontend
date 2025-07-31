@@ -1,6 +1,4 @@
 "use client";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
