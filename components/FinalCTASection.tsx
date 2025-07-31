@@ -22,16 +22,25 @@ const FinalCTASection = () => {
           <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
             Take Your Teamwork to the Next Level
           </h2>
-          
+
           <p className="text-xl lg:text-2xl text-blue-100 max-w-2xl mx-auto">
-            Join thousands of developers and companies who trust Connect to build the future of technology together.
+            Join thousands of developers and companies who trust Connect to
+            build the future of technology together.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-            <Button variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-brand min-w-[200px]">
+            <Button
+              variant="outline"
+              size="lg"
+              className=" border-white hover:bg-white text-brand min-w-[200px]"
+            >
               Get Started
             </Button>
-            <Button variant="secondary" size="lg" className="bg-white text-brand hover:bg-blue-50 min-w-[200px]">
+            <Button
+              variant="secondary"
+              size="lg"
+              className="bg-white text-brand hover:bg-blue-50 min-w-[200px]"
+            >
               Learn More
             </Button>
           </div>
